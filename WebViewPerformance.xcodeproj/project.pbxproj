@@ -14,6 +14,9 @@
 		ECB321D429380A190062D58D /* WebViewPerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321D329380A190062D58D /* WebViewPerformanceTests.swift */; };
 		ECB321DE29380A190062D58D /* WebViewPerformanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321DD29380A190062D58D /* WebViewPerformanceUITests.swift */; };
 		ECB321E029380A190062D58D /* WebViewPerformanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321DF29380A190062D58D /* WebViewPerformanceUITestsLaunchTests.swift */; };
+		ECB321ED293900840062D58D /* UIKitScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321EC293900840062D58D /* UIKitScrollViewController.swift */; };
+		ECD275752939541C0094CAD5 /* SwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD275742939541C0094CAD5 /* SwiftUIWebView.swift */; };
+		ECD27577293954F40094CAD5 /* SwiftUITabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD27576293954F40094CAD5 /* SwiftUITabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,10 @@
 		ECB321D929380A190062D58D /* WebViewPerformanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewPerformanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB321DD29380A190062D58D /* WebViewPerformanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPerformanceUITests.swift; sourceTree = "<group>"; };
 		ECB321DF29380A190062D58D /* WebViewPerformanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPerformanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ECB321EC293900840062D58D /* UIKitScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitScrollViewController.swift; sourceTree = "<group>"; };
+		ECD27573293928C40094CAD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ECD275742939541C0094CAD5 /* SwiftUIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWebView.swift; sourceTree = "<group>"; };
+		ECD27576293954F40094CAD5 /* SwiftUITabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +102,14 @@
 		ECB321C029380A180062D58D /* WebViewPerformance */ = {
 			isa = PBXGroup;
 			children = (
-				ECB321C129380A180062D58D /* WebViewPerformanceApp.swift */,
-				ECB321C329380A180062D58D /* ContentView.swift */,
-				ECB321C529380A190062D58D /* Assets.xcassets */,
 				ECB321C729380A190062D58D /* WebViewPerformance.entitlements */,
+				ECD27573293928C40094CAD5 /* Info.plist */,
+				ECB321C329380A180062D58D /* ContentView.swift */,
+				ECD27576293954F40094CAD5 /* SwiftUITabView.swift */,
+				ECD275742939541C0094CAD5 /* SwiftUIWebView.swift */,
+				ECB321EC293900840062D58D /* UIKitScrollViewController.swift */,
+				ECB321C129380A180062D58D /* WebViewPerformanceApp.swift */,
+				ECB321C529380A190062D58D /* Assets.xcassets */,
 				ECB321C829380A190062D58D /* Preview Content */,
 			);
 			path = WebViewPerformance;
@@ -260,7 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECB321C429380A180062D58D /* ContentView.swift in Sources */,
+				ECD27577293954F40094CAD5 /* SwiftUITabView.swift in Sources */,
 				ECB321C229380A180062D58D /* WebViewPerformanceApp.swift in Sources */,
+				ECB321ED293900840062D58D /* UIKitScrollViewController.swift in Sources */,
+				ECD275752939541C0094CAD5 /* SwiftUIWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +433,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WebViewPerformance/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -457,6 +472,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WebViewPerformance/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

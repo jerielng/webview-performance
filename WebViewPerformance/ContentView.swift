@@ -6,16 +6,21 @@
 //
 
 import SwiftUI
+import WebKit
+import UIKit
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+      TabView {
+        SwiftUITabView()
+          .tabItem {
+            Label("SwiftUI", systemImage: "swift")
+          }
+        UIKitScrollViewControllerRepresentable()
+          .tabItem {
+            Label("UIKit", systemImage: "tablecells.fill")
+          }
+      }
     }
 }
 
