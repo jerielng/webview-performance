@@ -9,8 +9,15 @@ import SwiftUI
 import WebKit
 
 struct SwiftUIWebView: UIViewRepresentable {
+  private let webViewConfiguration: WKWebViewConfiguration = {
+    let configuration = WKWebViewConfiguration()
+    configuration.allowsInlineMediaPlayback = true
+    configuration.mediaTypesRequiringUserActionForPlayback = []
+    return configuration
+  }()
+  
   func makeUIView(context: Context) -> WKWebView {
-    let webView = WKWebView()
+    let webView = WKWebView(frame: .zero, configuration: webViewConfiguration)
     webView.backgroundColor = .red
     webView.scrollView.isScrollEnabled = false
     return webView
@@ -18,8 +25,9 @@ struct SwiftUIWebView: UIViewRepresentable {
   
   func updateUIView(_ uiView: WKWebView, context: Context) {
     DispatchQueue.main.async { [weak uiView] in
-      var request: URLRequest = .init(url: .init(string: "https://www.youtube.com/watch?v=gJXFebyccfg")!)
-      uiView?.loadSimulatedRequest(request, responseHTML: """
+      let request: URLRequest = .init(url: .init(string: "https://www.youtube.com/watch?v=gJXFebyccfg")!)
+      uiView?.loadSimulatedRequest(request,
+                                   responseHTML: """
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gJXFebyccfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 """)
     }
