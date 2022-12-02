@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EC234B54293A66F1002215F5 /* WebViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC234B53293A66F1002215F5 /* WebViewTableViewCell.swift */; };
-		EC234B56293A674D002215F5 /* UIKitTableViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC234B55293A674D002215F5 /* UIKitTableViewControllerRepresentable.swift */; };
+		EC234B56293A674D002215F5 /* UIKitRepresentables.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC234B55293A674D002215F5 /* UIKitRepresentables.swift */; };
 		EC234B58293A67A2002215F5 /* UIKitCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC234B57293A67A2002215F5 /* UIKitCollectionViewController.swift */; };
+		EC234B5C293A6A12002215F5 /* WKWebView+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC234B5B293A6A12002215F5 /* WKWebView+Builder.swift */; };
+		EC234B5E293A6A34002215F5 /* WebViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC234B5D293A6A34002215F5 /* WebViewCollectionViewCell.swift */; };
 		ECB321C229380A180062D58D /* WebViewPerformanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321C129380A180062D58D /* WebViewPerformanceApp.swift */; };
 		ECB321C429380A180062D58D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321C329380A180062D58D /* ContentView.swift */; };
 		ECB321C629380A190062D58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB321C529380A190062D58D /* Assets.xcassets */; };
@@ -41,8 +43,10 @@
 
 /* Begin PBXFileReference section */
 		EC234B53293A66F1002215F5 /* WebViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewTableViewCell.swift; sourceTree = "<group>"; };
-		EC234B55293A674D002215F5 /* UIKitTableViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTableViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		EC234B55293A674D002215F5 /* UIKitRepresentables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitRepresentables.swift; sourceTree = "<group>"; };
 		EC234B57293A67A2002215F5 /* UIKitCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitCollectionViewController.swift; sourceTree = "<group>"; };
+		EC234B5B293A6A12002215F5 /* WKWebView+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Builder.swift"; sourceTree = "<group>"; };
+		EC234B5D293A6A34002215F5 /* WebViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewCollectionViewCell.swift; sourceTree = "<group>"; };
 		ECB321BE29380A180062D58D /* WebViewPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB321C129380A180062D58D /* WebViewPerformanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPerformanceApp.swift; sourceTree = "<group>"; };
 		ECB321C329380A180062D58D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 		EC234B50293A66BF002215F5 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				EC234B55293A674D002215F5 /* UIKitRepresentables.swift */,
 				EC234B5A293A67C1002215F5 /* UICollectionView */,
 				EC234B59293A67B7002215F5 /* UITableView */,
 			);
@@ -107,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				ECB321EC293900840062D58D /* UIKitTableViewController.swift */,
-				EC234B55293A674D002215F5 /* UIKitTableViewControllerRepresentable.swift */,
 				EC234B53293A66F1002215F5 /* WebViewTableViewCell.swift */,
 			);
 			path = UITableView;
@@ -117,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				EC234B57293A67A2002215F5 /* UIKitCollectionViewController.swift */,
+				EC234B5D293A6A34002215F5 /* WebViewCollectionViewCell.swift */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				ECB321C829380A190062D58D /* Preview Content */,
 				EC234B51293A66D9002215F5 /* SwiftUI */,
 				EC234B50293A66BF002215F5 /* UIKit */,
+				EC234B5B293A6A12002215F5 /* WKWebView+Builder.swift */,
 			);
 			path = WebViewPerformance;
 			sourceTree = "<group>";
@@ -311,13 +317,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC234B56293A674D002215F5 /* UIKitTableViewControllerRepresentable.swift in Sources */,
+				EC234B56293A674D002215F5 /* UIKitRepresentables.swift in Sources */,
 				ECB321C429380A180062D58D /* ContentView.swift in Sources */,
 				EC234B54293A66F1002215F5 /* WebViewTableViewCell.swift in Sources */,
+				EC234B5C293A6A12002215F5 /* WKWebView+Builder.swift in Sources */,
 				ECD27577293954F40094CAD5 /* SwiftUITabView.swift in Sources */,
 				ECB321C229380A180062D58D /* WebViewPerformanceApp.swift in Sources */,
 				ECB321ED293900840062D58D /* UIKitTableViewController.swift in Sources */,
 				ECD275752939541C0094CAD5 /* SwiftUIWebView.swift in Sources */,
+				EC234B5E293A6A34002215F5 /* WebViewCollectionViewCell.swift in Sources */,
 				EC234B58293A67A2002215F5 /* UIKitCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

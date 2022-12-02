@@ -9,18 +9,8 @@ import SwiftUI
 import WebKit
 
 struct SwiftUIWebView: UIViewRepresentable {
-  private let webViewConfiguration: WKWebViewConfiguration = {
-    let configuration = WKWebViewConfiguration()
-    configuration.allowsInlineMediaPlayback = true
-    configuration.mediaTypesRequiringUserActionForPlayback = []
-    return configuration
-  }()
-  
   func makeUIView(context: Context) -> WKWebView {
-    let webView = WKWebView(frame: .zero, configuration: webViewConfiguration)
-    webView.backgroundColor = .red
-    webView.scrollView.isScrollEnabled = false
-    return webView
+    WKWebView.build()
   }
   
   func updateUIView(_ uiView: WKWebView, context: Context) {

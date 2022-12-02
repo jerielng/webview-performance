@@ -17,3 +17,13 @@ struct UIKitTableViewControllerRepresentable: UIViewControllerRepresentable {
   
   typealias UIViewControllerType = UIKitTableViewController
 }
+
+struct UIKitCollectionViewControllerRepresentable: UIViewControllerRepresentable {
+  func makeUIViewController(context: Context) -> UIKitCollectionViewController {
+    UIKitCollectionViewController()
+  }
+  
+  func updateUIViewController(_ uiViewController: UIKitCollectionViewController, context: Context) {}
+  
+  typealias UIViewControllerType = UIKitCollectionViewController
+}

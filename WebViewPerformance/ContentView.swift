@@ -18,9 +18,9 @@ struct ContentView: View {
           }
         UIKitTableViewControllerRepresentable()
           .tabItem {
-            Label("UITableView", systemImage: "tablecells.fill")
+            Label("UITableView", systemImage: "list.bullet")
           }
-        UIKitTableViewControllerRepresentable()
+        UIKitCollectionViewControllerRepresentable()
           .tabItem {
             Label("UICollectionView", systemImage: "tablecells.fill")
           }

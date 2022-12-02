@@ -1,5 +1,5 @@
 //
-//  WebViewTableViewCell.swift
+//  WebViewCollectionViewCell.swift
 //  WebViewPerformance
 //
 //  Created by Jeriel Ng on 12/2/22.
@@ -8,18 +8,18 @@
 import UIKit
 import WebKit
 
-class WebViewTableViewCell: UITableViewCell {
-  static let reuseIdentifier = "WebViewTableViewCell"
+class WebViewCollectionViewCell: UICollectionViewCell {
+  static let reuseIdentifier = "WebViewCollectionViewCell"
   
   lazy var webView: WKWebView = {
     WKWebView.build()
   }()
   
-  override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-    super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-    contentView.addSubview(webView)
+  override init(frame: CGRect) {
+    super.init(frame: frame)
     
+    contentView.addSubview(webView)
+
     NSLayoutConstraint.activate([
       webView.topAnchor.constraint(equalTo: contentView.topAnchor),
       webView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
