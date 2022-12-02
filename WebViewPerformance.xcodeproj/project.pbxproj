@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC234B54293A66F1002215F5 /* WebViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC234B53293A66F1002215F5 /* WebViewTableViewCell.swift */; };
+		EC234B56293A674D002215F5 /* UIKitTableViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC234B55293A674D002215F5 /* UIKitTableViewControllerRepresentable.swift */; };
+		EC234B58293A67A2002215F5 /* UIKitCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC234B57293A67A2002215F5 /* UIKitCollectionViewController.swift */; };
 		ECB321C229380A180062D58D /* WebViewPerformanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321C129380A180062D58D /* WebViewPerformanceApp.swift */; };
 		ECB321C429380A180062D58D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321C329380A180062D58D /* ContentView.swift */; };
 		ECB321C629380A190062D58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB321C529380A190062D58D /* Assets.xcassets */; };
@@ -14,7 +17,7 @@
 		ECB321D429380A190062D58D /* WebViewPerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321D329380A190062D58D /* WebViewPerformanceTests.swift */; };
 		ECB321DE29380A190062D58D /* WebViewPerformanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321DD29380A190062D58D /* WebViewPerformanceUITests.swift */; };
 		ECB321E029380A190062D58D /* WebViewPerformanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321DF29380A190062D58D /* WebViewPerformanceUITestsLaunchTests.swift */; };
-		ECB321ED293900840062D58D /* UIKitScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321EC293900840062D58D /* UIKitScrollViewController.swift */; };
+		ECB321ED293900840062D58D /* UIKitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321EC293900840062D58D /* UIKitTableViewController.swift */; };
 		ECD275752939541C0094CAD5 /* SwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD275742939541C0094CAD5 /* SwiftUIWebView.swift */; };
 		ECD27577293954F40094CAD5 /* SwiftUITabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD27576293954F40094CAD5 /* SwiftUITabView.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC234B53293A66F1002215F5 /* WebViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewTableViewCell.swift; sourceTree = "<group>"; };
+		EC234B55293A674D002215F5 /* UIKitTableViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTableViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		EC234B57293A67A2002215F5 /* UIKitCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitCollectionViewController.swift; sourceTree = "<group>"; };
 		ECB321BE29380A180062D58D /* WebViewPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB321C129380A180062D58D /* WebViewPerformanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPerformanceApp.swift; sourceTree = "<group>"; };
 		ECB321C329380A180062D58D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,7 +54,7 @@
 		ECB321D929380A190062D58D /* WebViewPerformanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewPerformanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB321DD29380A190062D58D /* WebViewPerformanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPerformanceUITests.swift; sourceTree = "<group>"; };
 		ECB321DF29380A190062D58D /* WebViewPerformanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPerformanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		ECB321EC293900840062D58D /* UIKitScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitScrollViewController.swift; sourceTree = "<group>"; };
+		ECB321EC293900840062D58D /* UIKitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTableViewController.swift; sourceTree = "<group>"; };
 		ECD27573293928C40094CAD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ECD275742939541C0094CAD5 /* SwiftUIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWebView.swift; sourceTree = "<group>"; };
 		ECD27576293954F40094CAD5 /* SwiftUITabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITabView.swift; sourceTree = "<group>"; };
@@ -79,6 +85,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC234B50293A66BF002215F5 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				EC234B5A293A67C1002215F5 /* UICollectionView */,
+				EC234B59293A67B7002215F5 /* UITableView */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		EC234B51293A66D9002215F5 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				ECD27576293954F40094CAD5 /* SwiftUITabView.swift */,
+				ECD275742939541C0094CAD5 /* SwiftUIWebView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		EC234B59293A67B7002215F5 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				ECB321EC293900840062D58D /* UIKitTableViewController.swift */,
+				EC234B55293A674D002215F5 /* UIKitTableViewControllerRepresentable.swift */,
+				EC234B53293A66F1002215F5 /* WebViewTableViewCell.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		EC234B5A293A67C1002215F5 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EC234B57293A67A2002215F5 /* UIKitCollectionViewController.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
 		ECB321B529380A180062D58D = {
 			isa = PBXGroup;
 			children = (
@@ -105,12 +147,11 @@
 				ECB321C729380A190062D58D /* WebViewPerformance.entitlements */,
 				ECD27573293928C40094CAD5 /* Info.plist */,
 				ECB321C329380A180062D58D /* ContentView.swift */,
-				ECD27576293954F40094CAD5 /* SwiftUITabView.swift */,
-				ECD275742939541C0094CAD5 /* SwiftUIWebView.swift */,
-				ECB321EC293900840062D58D /* UIKitScrollViewController.swift */,
 				ECB321C129380A180062D58D /* WebViewPerformanceApp.swift */,
 				ECB321C529380A190062D58D /* Assets.xcassets */,
 				ECB321C829380A190062D58D /* Preview Content */,
+				EC234B51293A66D9002215F5 /* SwiftUI */,
+				EC234B50293A66BF002215F5 /* UIKit */,
 			);
 			path = WebViewPerformance;
 			sourceTree = "<group>";
@@ -270,11 +311,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC234B56293A674D002215F5 /* UIKitTableViewControllerRepresentable.swift in Sources */,
 				ECB321C429380A180062D58D /* ContentView.swift in Sources */,
+				EC234B54293A66F1002215F5 /* WebViewTableViewCell.swift in Sources */,
 				ECD27577293954F40094CAD5 /* SwiftUITabView.swift in Sources */,
 				ECB321C229380A180062D58D /* WebViewPerformanceApp.swift in Sources */,
-				ECB321ED293900840062D58D /* UIKitScrollViewController.swift in Sources */,
+				ECB321ED293900840062D58D /* UIKitTableViewController.swift in Sources */,
 				ECD275752939541C0094CAD5 /* SwiftUIWebView.swift in Sources */,
+				EC234B58293A67A2002215F5 /* UIKitCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

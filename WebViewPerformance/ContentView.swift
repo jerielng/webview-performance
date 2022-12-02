@@ -16,9 +16,13 @@ struct ContentView: View {
           .tabItem {
             Label("SwiftUI", systemImage: "swift")
           }
-        UIKitScrollViewControllerRepresentable()
+        UIKitTableViewControllerRepresentable()
           .tabItem {
-            Label("UIKit", systemImage: "tablecells.fill")
+            Label("UITableView", systemImage: "tablecells.fill")
+          }
+        UIKitTableViewControllerRepresentable()
+          .tabItem {
+            Label("UICollectionView", systemImage: "tablecells.fill")
           }
       }
     }
