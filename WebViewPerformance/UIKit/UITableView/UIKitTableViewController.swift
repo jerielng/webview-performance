@@ -8,6 +8,19 @@
 import UIKit
 
 class UIKitTableViewController: UITableViewController {
+  private let websiteList: [String] = [
+    "https://longdogechallenge.com/",
+    "https://checkboxrace.com/",
+    "https://onesquareminesweeper.com/",
+    "http://heeeeeeeey.com/",
+    "http://corndog.io/",
+    "https://binarypiano.com/",
+    "https://weirdorconfusing.com/",
+    "https://mondrianandme.com/",
+    "https://puginarug.com",
+    "http://floatingqrcode.com/",
+  ]
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     tableView.register(WebViewTableViewCell.self, forCellReuseIdentifier: WebViewTableViewCell.reuseIdentifier)
@@ -19,8 +32,9 @@ class UIKitTableViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: WebViewTableViewCell.reuseIdentifier) as! WebViewTableViewCell
-    DispatchQueue.main.async {
-      cell.webView.load(.init(url: .init(string: "https://google.com")!))
+    DispatchQueue.main.async { [weak self] in
+      guard let website = self?.websiteList[indexPath.row] else { return }
+      cell.webView.load(.init(url: .init(string: website)!))
     }
     return cell
   }
