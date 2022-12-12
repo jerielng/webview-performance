@@ -12,6 +12,7 @@
 		EC234B58293A67A2002215F5 /* UIKitCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC234B57293A67A2002215F5 /* UIKitCollectionViewController.swift */; };
 		EC234B5C293A6A12002215F5 /* WKWebView+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC234B5B293A6A12002215F5 /* WKWebView+Builder.swift */; };
 		EC234B5E293A6A34002215F5 /* WebViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC234B5D293A6A34002215F5 /* WebViewCollectionViewCell.swift */; };
+		EC300D6D2947B5EB00339E2D /* LiveActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC300D6C2947B5EB00339E2D /* LiveActivityView.swift */; };
 		ECB321C229380A180062D58D /* WebViewPerformanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321C129380A180062D58D /* WebViewPerformanceApp.swift */; };
 		ECB321C429380A180062D58D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321C329380A180062D58D /* ContentView.swift */; };
 		ECB321C629380A190062D58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB321C529380A190062D58D /* Assets.xcassets */; };
@@ -22,6 +23,17 @@
 		ECB321ED293900840062D58D /* UIKitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB321EC293900840062D58D /* UIKitTableViewController.swift */; };
 		ECD275752939541C0094CAD5 /* SwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD275742939541C0094CAD5 /* SwiftUIWebView.swift */; };
 		ECD27577293954F40094CAD5 /* SwiftUITabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD27576293954F40094CAD5 /* SwiftUITabView.swift */; };
+		ECDD596A29439B59008FB7B0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDD596929439B59008FB7B0 /* WidgetKit.framework */; };
+		ECDD596C29439B59008FB7B0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDD596B29439B59008FB7B0 /* SwiftUI.framework */; };
+		ECDD596F29439B59008FB7B0 /* MyLiveActivityBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDD596E29439B59008FB7B0 /* MyLiveActivityBundle.swift */; };
+		ECDD597129439B59008FB7B0 /* MyLiveActivityLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDD597029439B59008FB7B0 /* MyLiveActivityLiveActivity.swift */; };
+		ECDD597329439B59008FB7B0 /* MyLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDD597229439B59008FB7B0 /* MyLiveActivity.swift */; };
+		ECDD597629439B5A008FB7B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDD597529439B5A008FB7B0 /* Assets.xcassets */; };
+		ECDD597829439B5A008FB7B0 /* MyLiveActivity.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = ECDD597429439B59008FB7B0 /* MyLiveActivity.intentdefinition */; };
+		ECDD597929439B5A008FB7B0 /* MyLiveActivity.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = ECDD597429439B59008FB7B0 /* MyLiveActivity.intentdefinition */; };
+		ECDD597C29439B5A008FB7B0 /* MyLiveActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ECDD596729439B59008FB7B0 /* MyLiveActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ECDD59812943B694008FB7B0 /* MyLiveActivityLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDD597029439B59008FB7B0 /* MyLiveActivityLiveActivity.swift */; };
+		ECDD59832943B699008FB7B0 /* MyLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDD597229439B59008FB7B0 /* MyLiveActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +51,28 @@
 			remoteGlobalIDString = ECB321BD29380A180062D58D;
 			remoteInfo = WebViewPerformance;
 		};
+		ECDD597A29439B5A008FB7B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECB321B629380A180062D58D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECDD596629439B59008FB7B0;
+			remoteInfo = MyLiveActivityExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ECDD597D29439B5A008FB7B0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ECDD597C29439B5A008FB7B0 /* MyLiveActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EC234B53293A66F1002215F5 /* WebViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewTableViewCell.swift; sourceTree = "<group>"; };
@@ -47,6 +80,7 @@
 		EC234B57293A67A2002215F5 /* UIKitCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitCollectionViewController.swift; sourceTree = "<group>"; };
 		EC234B5B293A6A12002215F5 /* WKWebView+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Builder.swift"; sourceTree = "<group>"; };
 		EC234B5D293A6A34002215F5 /* WebViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC300D6C2947B5EB00339E2D /* LiveActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityView.swift; sourceTree = "<group>"; };
 		ECB321BE29380A180062D58D /* WebViewPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB321C129380A180062D58D /* WebViewPerformanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPerformanceApp.swift; sourceTree = "<group>"; };
 		ECB321C329380A180062D58D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +96,15 @@
 		ECD27573293928C40094CAD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ECD275742939541C0094CAD5 /* SwiftUIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWebView.swift; sourceTree = "<group>"; };
 		ECD27576293954F40094CAD5 /* SwiftUITabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITabView.swift; sourceTree = "<group>"; };
+		ECDD596729439B59008FB7B0 /* MyLiveActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyLiveActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECDD596929439B59008FB7B0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		ECDD596B29439B59008FB7B0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		ECDD596E29439B59008FB7B0 /* MyLiveActivityBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLiveActivityBundle.swift; sourceTree = "<group>"; };
+		ECDD597029439B59008FB7B0 /* MyLiveActivityLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLiveActivityLiveActivity.swift; sourceTree = "<group>"; };
+		ECDD597229439B59008FB7B0 /* MyLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLiveActivity.swift; sourceTree = "<group>"; };
+		ECDD597429439B59008FB7B0 /* MyLiveActivity.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MyLiveActivity.intentdefinition; sourceTree = "<group>"; };
+		ECDD597529439B5A008FB7B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECDD597729439B5A008FB7B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +129,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECDD596429439B59008FB7B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDD596C29439B59008FB7B0 /* SwiftUI.framework in Frameworks */,
+				ECDD596A29439B59008FB7B0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,6 +156,7 @@
 			children = (
 				ECD27576293954F40094CAD5 /* SwiftUITabView.swift */,
 				ECD275742939541C0094CAD5 /* SwiftUIWebView.swift */,
+				EC300D6C2947B5EB00339E2D /* LiveActivityView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -132,6 +185,8 @@
 				ECB321C029380A180062D58D /* WebViewPerformance */,
 				ECB321D229380A190062D58D /* WebViewPerformanceTests */,
 				ECB321DC29380A190062D58D /* WebViewPerformanceUITests */,
+				ECDD596D29439B59008FB7B0 /* MyLiveActivity */,
+				ECDD596829439B59008FB7B0 /* Frameworks */,
 				ECB321BF29380A180062D58D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,6 +197,7 @@
 				ECB321BE29380A180062D58D /* WebViewPerformance.app */,
 				ECB321CF29380A190062D58D /* WebViewPerformanceTests.xctest */,
 				ECB321D929380A190062D58D /* WebViewPerformanceUITests.xctest */,
+				ECDD596729439B59008FB7B0 /* MyLiveActivityExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,6 +243,28 @@
 			path = WebViewPerformanceUITests;
 			sourceTree = "<group>";
 		};
+		ECDD596829439B59008FB7B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECDD596929439B59008FB7B0 /* WidgetKit.framework */,
+				ECDD596B29439B59008FB7B0 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECDD596D29439B59008FB7B0 /* MyLiveActivity */ = {
+			isa = PBXGroup;
+			children = (
+				ECDD596E29439B59008FB7B0 /* MyLiveActivityBundle.swift */,
+				ECDD597029439B59008FB7B0 /* MyLiveActivityLiveActivity.swift */,
+				ECDD597229439B59008FB7B0 /* MyLiveActivity.swift */,
+				ECDD597429439B59008FB7B0 /* MyLiveActivity.intentdefinition */,
+				ECDD597529439B5A008FB7B0 /* Assets.xcassets */,
+				ECDD597729439B5A008FB7B0 /* Info.plist */,
+			);
+			path = MyLiveActivity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,10 +275,12 @@
 				ECB321BA29380A180062D58D /* Sources */,
 				ECB321BB29380A180062D58D /* Frameworks */,
 				ECB321BC29380A180062D58D /* Resources */,
+				ECDD597D29439B5A008FB7B0 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ECDD597B29439B5A008FB7B0 /* PBXTargetDependency */,
 			);
 			name = WebViewPerformance;
 			productName = WebViewPerformance;
@@ -243,6 +323,23 @@
 			productReference = ECB321D929380A190062D58D /* WebViewPerformanceUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		ECDD596629439B59008FB7B0 /* MyLiveActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECDD598029439B5A008FB7B0 /* Build configuration list for PBXNativeTarget "MyLiveActivityExtension" */;
+			buildPhases = (
+				ECDD596329439B59008FB7B0 /* Sources */,
+				ECDD596429439B59008FB7B0 /* Frameworks */,
+				ECDD596529439B59008FB7B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyLiveActivityExtension;
+			productName = MyLiveActivityExtension;
+			productReference = ECDD596729439B59008FB7B0 /* MyLiveActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -264,6 +361,9 @@
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = ECB321BD29380A180062D58D;
 					};
+					ECDD596629439B59008FB7B0 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 				};
 			};
 			buildConfigurationList = ECB321B929380A180062D58D /* Build configuration list for PBXProject "WebViewPerformance" */;
@@ -282,6 +382,7 @@
 				ECB321BD29380A180062D58D /* WebViewPerformance */,
 				ECB321CE29380A190062D58D /* WebViewPerformanceTests */,
 				ECB321D829380A190062D58D /* WebViewPerformanceUITests */,
+				ECDD596629439B59008FB7B0 /* MyLiveActivityExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -310,6 +411,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECDD596529439B59008FB7B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDD597629439B5A008FB7B0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -326,7 +435,11 @@
 				ECB321ED293900840062D58D /* UIKitTableViewController.swift in Sources */,
 				ECD275752939541C0094CAD5 /* SwiftUIWebView.swift in Sources */,
 				EC234B5E293A6A34002215F5 /* WebViewCollectionViewCell.swift in Sources */,
+				ECDD59832943B699008FB7B0 /* MyLiveActivity.swift in Sources */,
 				EC234B58293A67A2002215F5 /* UIKitCollectionViewController.swift in Sources */,
+				ECDD59812943B694008FB7B0 /* MyLiveActivityLiveActivity.swift in Sources */,
+				ECDD597929439B5A008FB7B0 /* MyLiveActivity.intentdefinition in Sources */,
+				EC300D6D2947B5EB00339E2D /* LiveActivityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +460,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECDD596329439B59008FB7B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDD597329439B59008FB7B0 /* MyLiveActivity.swift in Sources */,
+				ECDD597129439B59008FB7B0 /* MyLiveActivityLiveActivity.swift in Sources */,
+				ECDD596F29439B59008FB7B0 /* MyLiveActivityBundle.swift in Sources */,
+				ECDD597829439B5A008FB7B0 /* MyLiveActivity.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -359,6 +483,11 @@
 			isa = PBXTargetDependency;
 			target = ECB321BD29380A180062D58D /* WebViewPerformance */;
 			targetProxy = ECB321DA29380A190062D58D /* PBXContainerItemProxy */;
+		};
+		ECDD597B29439B5A008FB7B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECDD596629439B59008FB7B0 /* MyLiveActivityExtension */;
+			targetProxy = ECDD597A29439B5A008FB7B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -475,6 +604,7 @@
 		ECB321E429380A190062D58D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WebViewPerformance/WebViewPerformance.entitlements;
@@ -514,6 +644,7 @@
 		ECB321E529380A190062D58D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WebViewPerformance/WebViewPerformance.entitlements;
@@ -640,6 +771,65 @@
 			};
 			name = Release;
 		};
+		ECDD597E29439B5A008FB7B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JM8QV8WRA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyLiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braze.WebViewPerformance.MyLiveActivity2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECDD597F29439B5A008FB7B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JM8QV8WRA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyLiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braze.WebViewPerformance.MyLiveActivity2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -675,6 +865,15 @@
 			buildConfigurations = (
 				ECB321EA29380A190062D58D /* Debug */,
 				ECB321EB29380A190062D58D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECDD598029439B5A008FB7B0 /* Build configuration list for PBXNativeTarget "MyLiveActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECDD597E29439B5A008FB7B0 /* Debug */,
+				ECDD597F29439B5A008FB7B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

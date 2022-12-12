@@ -24,6 +24,10 @@ struct ContentView: View {
           .tabItem {
             Label("UICollectionView", systemImage: "tablecells.fill")
           }
+        LiveActivityView()
+          .tabItem {
+            Label("Live Activity", systemImage: "clock.badge.exclamationmark")
+          }
       }
     }
 }
